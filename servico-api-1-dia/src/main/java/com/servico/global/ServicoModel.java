@@ -19,14 +19,14 @@ public class ServicoModel {
 	@Column
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private Long id;
-	
+
 	@Column
 	private String nome;
-	
+
 	@Column
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date data;
-	
+
 	public ServicoModel() {
 	}
 
@@ -37,7 +37,7 @@ public class ServicoModel {
 	}
 
 	// GETTERS AND SETTERS
-	
+
 	public Long getId() {
 		return id;
 	}
